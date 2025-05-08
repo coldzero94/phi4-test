@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "phi4-test"
+version = "0.1.0"
+description = ""
+authors = ["coby@vessl.ai"]
+package-mode = false
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
