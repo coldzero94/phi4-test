@@ -43,7 +43,7 @@ class LLMChatHandler():
             "Content-Type": "application/json"
         }
         payload = {
-            "model": "Qwen/Qwen2.5-14B-Instruct",  # VLLM 서버에 로드된 모델
+            "model": "microsoft/phi-4",  # VLLM 서버에 로드된 모델 (Phi-4로 변경)
             "messages": messages,
             "temperature": 0.7,
             "top_p": 0.8,
