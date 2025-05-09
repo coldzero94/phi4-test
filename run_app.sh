@@ -31,10 +31,10 @@ python -m vllm.entrypoints.openai.api_server \
   --model "$MODEL_TO_SERVE" \
   --host 0.0.0.0 \
   --port 7000 \
-  --dtype auto \
+  --dtype half \
   --trust-remote-code \
   --max-model-len 8192 \
-  --max-num-seqs 16 \
+  --max-num-seqs 8 \
   --gpu-memory-utilization 0.90 > "$LOG_FILE" 2>&1 & # Phi-4 (14B)에 맞게 조절
 
 # VLLM 서버 PID 저장
